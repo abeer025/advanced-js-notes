@@ -322,6 +322,7 @@
 //#region 11) ======== Array Functions =======
 
 // `sare array of function ke methhod me auto loop chalta he,har func me callback laga hota he callback har iteration pe chalta he aur har aik array of func me pehle perameter me value milti he, dusre me index number , tesary me pura array dubaara mlilta he.`
+//wohi return krta ha jo return me hoga
 // let arr = [ "a","b","c"];
 // arr.map((p,q,r) => {
 //   console.log(p);
@@ -331,16 +332,30 @@
 
 //*filter
 // array se value nikalne k lie
+// filter me array milta ha jise lazmi pora index return hoga chayye srf id hi return karen.
 //Example:
-// 
+// let a=[   
+//     {id :5,
+//     name: "abc",
+//     category: "a"
+//     }
+// ]
+
+// let b = a.filter((x,i,a) =>
+//      {return x.id;});
+//  console.log(b)
 
 //*forEach
 // har aik item  par kaam karne k lie
+//kch bbhi return nai krta
+//for calc purpose also
 //Example:
 // 
 
 //*reduce
+// iske phle parameter me wo wali value milegi jo return hogi
 // comparision k lie use karte he aur ya hamen koi minimum ya mzimum no nikalna ho array me se to use krsktey han
+
 
 //Example:
 // let arr = [1,2,3,4,5]
@@ -358,14 +373,22 @@
 
 //*every
 // agar sabhi value true he to true return karta he
+//every me sb jaga milega
 //Example:
 // 
 
+//====== find
+// pora object return krta ha
+// let b = a.find((x) => x.id == 3);
+
+// console.log(b)
 
 //*findIndex
-// pure array me value ka index find karne k lie
+// pure array me value ka index find karne k lie lekin yeah ham islye use krte ke agar araay ofobject me find krna ho
 //Example:
 // 
 
+//flat 
+// nested arrays ko merge krne ke leye
 
 //#endregion
