@@ -28,7 +28,9 @@
 // console.log(a); //10
 
 // Hoisting:
-//var me hoisting hoti ha. Hoisting aik default behavior js me  variables bnne se phle uska scope top per save hojata ha code execute hone se phle.
+//Var me hoisting hoti ha. Hoisting aik default behavior JS ka,
+//Hoisting mein variables aur function declarations code ke top par move ho jate hain.
+
 //Example:
 // console.log(x); // undefined
 // var x = 5;
@@ -48,7 +50,6 @@
 // let greeting = `Hello, ${name}!`;
 // console.log(greeting); //  Hello, Abeer!
 
-//Example:
 // let a = 7;
 // let b = `the square root of ${a} is ${a * a}`;
 // console.log(b);
@@ -56,6 +57,13 @@
 // let a = `asdasdasda sad as dasd as
 // d asd as da sd`;
 // console.log(a);
+
+//Example:
+// function greet(name) {
+//     return `Hello, ${name}! Welcome to the interview.`;
+// }
+// console.log(greet('John')); // Output: Hello, John! Welcome to the interview.
+
 
 //#endregion
 
@@ -135,7 +143,7 @@
 
 //#region 6) Spread Operator
 
-//spread operator kisi array ya obj ko merge krne ke liye use hota ha
+//spread operator kisi array ya obj ke element spread krne ke liye use hota ha,jisse new refrence array bnjata jb ham old array me changes krengay to automatically wo array bhi update hojaega because of refrence.
 
 //Example:
 
@@ -285,6 +293,7 @@
 // b) ==== Arrow Function
 // Advance me ham ab arrow function use krte han.arrow func ko fed arrow func bhi kehte han short syntax ke tor pe use krte ham.
 
+
 // c) ==== Closures
 
 // d) ==== lexical Scoping
@@ -325,9 +334,9 @@
 //wohi return krta ha jo return me hoga
 // let arr = [ "a","b","c"];
 // arr.map((p,q,r) => {
-//   console.log(p);
-//   console.log(q);
-//   console.log(r);
+//   console.log(p);// a
+//   console.log(q); // b
+//   console.log(r); //c
 // });
 
 //*filter
@@ -343,14 +352,21 @@
 
 // let b = a.filter((x,i,a) =>
 //      {return x.id;});
-//  console.log(b)
+//  console.log(b)// {id : 5 , name: "abc" , category: "a"}
 
 //*forEach
 // har aik item  par kaam karne k lie
 //kch bbhi return nai krta
 //for calc purpose also
 //Example:
-// 
+
+// const numbers = [1, 2, 3, 4];
+// numbers.forEach(num => console.log(num));
+// 1
+// 2
+// 3
+// 4
+
 
 //*reduce
 // iske phle parameter me wo wali value milegi jo return hogi
@@ -358,12 +374,12 @@
 
 
 //Example:
-// let arr = [1,2,3,4,5]
-// let result = arr.reduce(function(a,b){
-//     return a > b ? a : b;
-// })
+// let arr = [1, 2, 3, 4, 5];
 
-// console.log(result)
+// let result = arr.reduce((a, b) => a > b ? a : b);
+
+// console.log(result); // 5
+
 
 //*some
 // `agar koi value true he to true return karta he matlab k data me kisi ke number me (one zero) ho to true dega`
@@ -392,3 +408,7 @@
 // nested arrays ko merge krne ke leye
 
 //#endregion
+
+
+
+// syncrnize behavior
